@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body class="bg-black text-white">
+    <div id="header">
+        <div class="px-4 py-4">
+            <nav class="flex space-x-1 items-center justify-between flex-wrap">
+                <img class="w-36" src="images/logo.png">
+                <ul class="flex space-x-4 text-1xl font-medium mx-2.5 my-5" id="sidemenu">
+                    <li class="inline-block text-white"><a class=" relative decoration-0 text-white "
+                            href="#header">Home</a>
+                    </li>
+                    <li class="inline-block text-white"><a class=" relative decoration-0 text-white "
+                            href="#about">About</a>
+                    </li>
+                    <li class="inline-block text-white"><a class=" relative decoration-0 text-white "
+                            href="#services">Services</a></li>
+                    <li class="inline-block text-white"><a class=" relative decoration-0 text-white "
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="inline-block text-white"><a class=" relative decoration-0 text-white "
+                            href="#contact">Contact</a></li>
+                    <i class='bx bx-arrow-back' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu-alt-right' onclick="openmenu()"></i>
+            </nav>
+            <div class="mt-[16%] text-3xl ">
+                <p class="font-normal ">WEB Developer</p>
+                <h1 class=" text-6xl mt-5  font-extrabold align-middle">Hi, I'm <span
+                        class="text-[#ff004f]">Sujal</span><br>Jain From India</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------about-------------->
+    <div class=" px-[80px] py-24  bg-[#131111] " id="about">
+        <div class="container">
+            <div class="row flex flex-wrap justify-between">
+
+                <div class="col-1 basis-[35%]">
+                    <img class="w-[100%] rounded-2xl " src="images/user.png" alt="">\
+                </div>
+                <div class="col-2 basis-[60%]">
+                    <h1 class="text-4xl  font-semibold  text-[#fff]">About me</h1>
+                    <p class="mt-4 font-n\ text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum,
+                        totam. Reiciendis veritatis ducimus, commodi sit modi atque at beatae saepe quo laboriosam
+                        expedita id quae minima perspiciatis earum voluptatem in facere natus possimus! Aspernatur,
+                        neque amet! Iusto alias possimus nostrum autem, reprehenderit ad quos consequatur amet dolores
+                        fuga nulla tempora.</p>
+
+                    <div class="tab-titles justify-between m-[20px] flex">
+                        <p class="tab-links active-link  flex mt-6 relative text-[18px] cursor-pointer font-medium "
+                            onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links   flex  mt-6 relative text-[18px] cursor-pointer font-medium"
+                            onclick="opentab('experience')">
+                            Experience</p>
+                        <p class="tab-links flex mt-6 relative text-[18px] cursor-pointer font-medium"
+                            onclick="opentab('education')">
+                            Education</p>
+                    </div>
+                    <div class="tab-contents active-tab list-none m-3  " id="skills">
+                        <ul>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">UI/UX</span><br>Designing Web/App
+                                interface</li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">Web Development</span><br>Web app
+                                Development </li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">App Development</span><br>Building
+                                Android/Ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents list-none m-3" id="experience">
+                        <ul>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2021 - Current</span><br>UI/UX Design
+                                Training at ET institute</li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2019 - 2021</span><br>Team lead at
+                                StarApp LLC</li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2017 - 2019</span><br>Internship at
+                                Amazon.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents list-none m-3" id="education">
+                        <ul>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2016</span><br>UI>UX Design training at
+                                MIT</li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2016</span><br>MBA from IIM Bangalore
+                            </li>
+                            <li><span class="text-[#ac0a3d] font-medium text-sm">2014</span><br>Btech from DSCE</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------servicesssss-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="text-4xl  font-semibold  text-[#fff]">My Services</h1>
+            <div class="services-list ">
+                <div>
+                    <i class='bx bxl-sketch bx-lg'></i>
+                    <h1>Web Design</h1>
+                    <p>Lorem ipsum dolor, sit e ique quos ea, officiis atque. Nesciunt nam quibusdam obcaecati!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxs-crop bx-lg'></i>
+                    <h1>UX/UI Design</h1>
+                    <p>Lorem ipsum dolor, sit amet conseique quos ea, officiis atque. Nesciunt nam quibusdam obcaecati!
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxs-devices bx-lg '></i>
+                    <h1>App Design</h1>
+                    <p>Lorem ipsum dolor, sit amet consecquibusdam obcaecati!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------portfolio---------->
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="text-4xl  font-semibold  text-[#fff]">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external '></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external '></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.</p>
+                        <a href="#"><i class='bx bx-link-external '></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row flex">
+                <div class="contact-left  ml-7 basis-[35%] ">
+                    <h1 class="text-4xl  font-semibold  text-[#fff]">Contact Me</h1>
+                    <p><i class='bx bxs-envelope bg-[#ff004f]'></i> contact@example.com</p>
+                    <p><i class='bx bxs-contact bg-[#ff004f]'></i> 0123456789</p>
+                    <div class="social-icons text-3xl decoration-0  inline-block mr-4 mt-6">
+                        <a href="https://facebook.com/"><i class='bx bxl-facebook'></i></a>
+                        <a href=""><i class='bx bxl-instagram'></i></a>
+                        <a href=""><i class='bx bxl-twitter'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+
+                    </div>
+                    <a href="images/my-cv.pdf" download="" class="btn btn2 ">Download CV</a>
+                </div>
+                <div class="contact-right basis-[60%] p-3 ">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright w-[100%] p-[25px] bg-[#262626] font-light mt-5 text-center content-center">
+            <p>Copyright @ sujal. Made with <i class='bx bxs-heart text-[#ff004f]'></i> by Creativity</p>
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
